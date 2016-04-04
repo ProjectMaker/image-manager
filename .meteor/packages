@@ -22,3 +22,10 @@ twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 accounts-password
 iron:router
+meteorhacks:npm
+
+
+npm-container
+tomperso:dropbox
+http
+sacha:spin

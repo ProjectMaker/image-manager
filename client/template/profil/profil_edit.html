@@ -1,17 +1,7 @@
 <template name="profilEdit">
-    <form class="main form page">
-        <div class="form-group">
-            <label class="control-label" for="apiKey">App key</label>
-            <div class="controls">
-                <input name="apiKey" id="apiKey" type="text" value="{{apiKey}}" placeholder="Votre Api key" class="form-control"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="apiPassword">App secret</label>
-            <div class="controls">
-                <input name="apiPassword" id="apiPassword" type="text" value="{{apiPassword}}" placeholder="Votre Api secret" class="form-control"/>
-            </div>
-        </div>
-        <input type="submit" value="Submit" class="btn btn-primary submit"/>
-    </form>
+    {{> dropboxAccount dropBox}}
+    {{#if currentUser}}
+        {{> dropboxConnect dropBox}}
+        <br/>
+    {{/if}}
 </template>
